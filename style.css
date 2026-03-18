@@ -210,16 +210,14 @@ nav {
     margin-bottom: 50px;
 }
 
-.product-card {
+/*jbkjlohhgc*/
+
+/*.product-card {
     background: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
 }
 
 .product-image {
@@ -248,7 +246,59 @@ nav {
     line-height: 1.5;
     margin-bottom: 15px;
     font-style: italic;
+}*/
+
+
+
+.product-card {
+    width: 300px; /* Задайте нужную ширину */
+    border: 1px solid #ddd; /* Легкая рамка (по желанию) */
+    border-radius: 8px; /* Скругленные углы (по желанию) */
+    overflow: hidden; /* Чтобы содержимое не вылезало за скругленные углы */
+    background-color: white; /* Фон всей карточки */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Легкая тень (по желанию) */
+    display: flex; /* Включаем flexbox */
+    flex-direction: column; /* Располагаем дочерние элементы вертикально */
 }
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%; /* Картинка на всю ширину блока */
+    height: 200px; /* Фиксированная высота для области картинки */
+    overflow: hidden; /* Чтобы изображение не вылезало за пределы, если оно большое */
+    background-color: #f5f5f5; /* Серый фон на время загрузки */
+}
+
+.product-image img {
+    width: 100%; /* Растягиваем картинку на всю ширину родителя */
+    height: 100%; /* Растягиваем на всю высоту родителя */
+    object-fit: cover; /* Важно! Картинка заполнит область, обрезаясь, но не искажаясь */
+    display: block; /* Убирает лишний отступ снизу у картинки */
+}
+
+.product-info {
+    padding: 15px; /* Внутренние отступы для текста */
+    background-color: white; /* Белый фон для текстового блока */
+    flex-grow: 1; /* Если нужно, чтобы блок с текстом занимал оставшееся место */
+}
+
+.product-info h4 {
+    margin: 0 0 10px 0; /* Отступ снизу у заголовка */
+    font-size: 18px;
+}
+
+.product-info p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+/*kbjbjkb*/
 
 .price {
     font-size: 16px;
